@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Component to test Should not render hidden item 1`] = `
+<div>
+  <div
+    class="fui-MenuItem ___xsv1qw0_pilt4t0 f1aa9q02 f16jpd5f f1jar5jt fyu767a f10pi13n fkfq4zb fxugw4r f81rol6 frdkuqy f1d2rq10 f22iagw f122n59 fkhj508 f1k6fduh f1q8lukm f1ma2n7n f1knas48 fnwyq0v ft1hn21 fuxngvv fp258yr f1xqy1su ftqa4ok f2hkw1w f8hki3x f1d2448m f1bjia2o ffh67wi f15bsgw9 f14e48fq f18yb2kv fd6o370 fh1cnn4 fy7oxxb fpukqih f184ne2d frrh606 f1v5zibi ful5kiu fo2hd23 f1jqcqds ftffrms f2e7qr6 fsr1zz6 f1dvezut fd0oaoj fjvm52t f1cwg4i8 fdiulkx f1yalx80 fq22d5a f1jw7pan"
+    role="menuitem"
+    tabindex="0"
+  >
+    <span
+      class="fui-MenuItem__content ___7dw8ap0_1i8f6w5 f161knb0 f12huiiw f3rmtva fqerorx"
+    >
+      Item 
+      2
+    </span>
+  </div>
+</div>
+`;
