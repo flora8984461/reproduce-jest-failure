@@ -14,7 +14,7 @@ import {
   OverflowItem,
   OverflowItemProps,
   useIsOverflowItemVisible,
-  useOverflowMenu
+  useOverflowMenu,
 } from "@fluentui/react-components";
 import * as React from "react";
 
@@ -23,7 +23,7 @@ const useStyles = makeStyles({
     display: "flex",
     flexWrap: "nowrap",
     minWidth: 0,
-    ...shorthands.overflow("hidden")
+    ...shorthands.overflow("hidden"),
   },
 
   resizableArea: {
@@ -45,9 +45,9 @@ const useStyles = makeStyles({
       lineHeight: 1,
       letterSpacing: "1px",
       color: tokens.colorNeutralForegroundOnBrand,
-      backgroundColor: tokens.colorBrandBackground
-    }
-  }
+      backgroundColor: tokens.colorBrandBackground,
+    },
+  },
 });
 
 export const OverflowMenuItem: React.FC<Pick<OverflowItemProps, "id">> = (
@@ -55,6 +55,8 @@ export const OverflowMenuItem: React.FC<Pick<OverflowItemProps, "id">> = (
 ) => {
   const { id } = props;
   const isVisible = useIsOverflowItemVisible(id);
+
+  console.log("isVisible", isVisible);
 
   if (isVisible) {
     return null;
@@ -65,9 +67,8 @@ export const OverflowMenuItem: React.FC<Pick<OverflowItemProps, "id">> = (
 };
 
 export const OverflowMenu: React.FC<{ itemIds: string[] }> = ({ itemIds }) => {
-  const { ref, overflowCount, isOverflowing } = useOverflowMenu<
-    HTMLButtonElement
-  >();
+  const { ref, overflowCount, isOverflowing } =
+    useOverflowMenu<HTMLButtonElement>();
 
   if (!isOverflowing) {
     return null;
